@@ -1,11 +1,8 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+import "./global.css";
 import "./App.css";
+import { Outlet } from "react-router-dom";
 
 function App() {
-    const [count, setCount] = useState(0);
-
     return (
         <div className="Greatcontainer">
             <gameboy-crystal>
@@ -21,8 +18,7 @@ function App() {
                             <div className="text">BATTERY</div>
                         </div>
                         <gameboy-screen class="container2">
-                            {/* </Outlet> */}
-                            <h1>hello world</h1>
+                            <Outlet />
                         </gameboy-screen>
                     </div>
                 </div>
