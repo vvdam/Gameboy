@@ -1,16 +1,23 @@
 @font-face {
     font-family: "IsMe";
-    src: url("assets/PixelNintendoFonts/TypefaceMarioWorldPixelFilledRegular-Yz84q.otf");
+    src: url("assets/fonts/PixelNintendoFonts/TypefaceMarioWorldPixelFilledRegular-rgVMx.ttf");
 }
-.title_screen {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    /* ref a nier replicant  */
-    z-index: 122474487139;
+@font-face {
+    font-family: "test";
+    src: url("assets/fonts/Synkopy-Flipside.otf");
 }
+@font-face {
+    font-family: "arcade";
+    src: url("assets/fonts/ARCADE_N.TTF");
+}
+.container-screen {
+    margin: auto;
+}
+p {
+    font-family: arcade;
+    font-size: 1.2em;
+}
+
 @keyframes fadein {
     to {
         opacity: 1;

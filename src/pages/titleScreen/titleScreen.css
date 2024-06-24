@@ -1,0 +1,14 @@
+div {
+    video {
+        transition: opacity 1s ease; /* Transition pour le fondu */
+    }
+
+    .fade-out {
+        opacity: 0; /* Opacité réduite à 0 pour le fondu */
+    }
+    @keyframes fadeIn {
+        to {
+            opacity: 1;
+        }
+    }
+}

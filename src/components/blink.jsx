@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
+import PropTypes from "prop-types"; // Importation de PropTypes
 
 function Blink({ text }) {
     const [visible, setVisible] = useState(true);
@@ -12,7 +13,10 @@ function Blink({ text }) {
         return () => clearInterval(intervalId);
     }, []);
 
-    return <p style={{ display: visible ? "block" : "none" }}>{text}</p>;
+    return <p style={{ opacity: visible ? 1 : 0 }}>{text}</p>;
 }
+Blink.propTypes = {
+    text: PropTypes.string.isRequired, // Définir le type de prop
+};
 
 export default Blink;
